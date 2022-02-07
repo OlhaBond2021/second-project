@@ -33,6 +33,10 @@
 a {
   display: inline-block;
   text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
 }
 
 .container {
@@ -42,6 +46,18 @@ a {
   padding: 0 15px;
 }
 
+
+@mixin main__button() {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  background-color: #333333;
+  border: 1px solid #FFFFFF;
+}
 
 
 

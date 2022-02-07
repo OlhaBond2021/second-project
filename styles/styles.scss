@@ -1,6 +1,100 @@
 @import "base";
 
 .background {
-  background-image: url("");
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-color: #454646;
+  background-position: center;
+  padding: 25px 0 30px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 525px;
+    align-items: center;
+
+    nav {
+      display: flex;
+      gap: 40px;
+    }
+
+    .header__account {
+      display: flex;
+      gap: 40px;
+    }
+  }
+
+  .center__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+
+    .main__title {
+      font-family: serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 49px;
+      margin-bottom: 50px;
+    }
+
+    .main__button {
+      @include main__button();
+    }
+  }
+
+  .separator {
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    margin-bottom: 30px;
+  }
+
+  .wrapper__items {
+    display: flex;
+
+    .item {
+      padding: 0 15px;
+      border-right: 1px solid #FFFFFF;
+
+      &:last-child {
+        border-right: none;
+        padding-right: 0;
+      }
+
+      .img__item {
+        width: 100%;
+        max-width: 160px;
+      }
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
