@@ -64,6 +64,12 @@ a {
   flex-direction: column;
 }
 
+@mixin grid() {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-rows: auto;
+  gap: 30px;
+}
 
 
 
