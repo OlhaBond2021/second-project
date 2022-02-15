@@ -1,0 +1,311 @@
+@font-face {
+  src: url("../fonts/Gilroy-Medium.woff");
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/Gilroy-Regular.woff");
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/Gilroy-Bold.woff");
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+  color: #ffffff;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.top__block > a {
+  font-size: 21px;
+  line-height: 140%;
+  color: #333333;
+  margin-bottom: 15px;
+}
+.top__block > h2 {
+  font-family: serif;
+  font-size: 30px;
+  line-height: 41px;
+  color: #333333;
+}
+
+.background__img {
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-color: #454646;
+  background-position: center;
+  padding: 25px 0 30px;
+}
+.background__img header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 525px;
+}
+.background__img header nav {
+  display: flex;
+  gap: 40px;
+}
+.background__img header .header__account {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.background__img header .header__logos svg {
+  fill: #ffffff;
+}
+.background__img header .header__logos:hover svg {
+  fill: #e3bf2c;
+}
+.background__img header .header__link:hover {
+  color: #e3bf2c;
+}
+.background__img header .main__logo svg {
+  fill: #FFFFFF;
+}
+.background__img header .main__logo:hover svg {
+  fill: #e3bf2c;
+}
+.background__img .center__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.background__img .center__block .main__title {
+  font-family: serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  margin-bottom: 50px;
+}
+.background__img .center__block .main__button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  background-color: #333333;
+  border: 1px solid #FFFFFF;
+}
+.background__img .center__block .main__button:hover {
+  background-color: #ffffff;
+  color: #333333;
+  opacity: 0.7;
+}
+.background__img .separator {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 30px;
+}
+.background__img .wrapper__items {
+  display: flex;
+}
+.background__img .wrapper__items .item {
+  padding: 0 15px;
+  border-right: 1px solid #FFFFFF;
+}
+.background__img .wrapper__items .item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+.background__img .wrapper__items .item .img__item {
+  width: 100%;
+  max-width: 160px;
+}
+
+.filters {
+  padding: 100px 0 120px;
+}
+.filters__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.filters__list > li {
+  list-style: none;
+  padding: 5px;
+}
+.filters__list > li > .filters__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  background-color: #333333;
+  border: 1px solid #FFFFFF;
+  background: #ffffff;
+  border: 1px solid #D6D6D6;
+  color: #333333;
+  padding: 15px 0;
+  width: 165px;
+  text-align: center;
+  transform: translate(0, -53px);
+}
+.filters__list .filters__li::before {
+  content: "";
+  display: block;
+  width: 165px;
+  height: 53px;
+  border: 1px solid #D6D6D6;
+  position: relative;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+}
+.filters__list a:hover {
+  background-color: #c4c3c3;
+  color: #333333;
+  border-color: #333333;
+}
+.filters__list .filters__active {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  background-color: #333333;
+  border: 1px solid #FFFFFF;
+  border-color: #333333;
+  height: 61px;
+  padding: 18px 35px;
+}
+.filters .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-rows: auto;
+  gap: 30px;
+}
+.filters .grid__card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+  min-height: 280px;
+  background-size: cover;
+  background-position: center;
+}
+.filters .grid .card1 {
+  background-image: url("../images/grid__card1.png");
+}
+.filters .grid .card2 {
+  background-image: url("../images/grid__card2.png");
+}
+.filters .grid .card3 {
+  background-image: url("../images/grid__card3.png");
+}
+.filters .grid .card4 {
+  background-image: url("../images/grid__card4.png");
+}
+.filters .grid .card5 {
+  background-image: url("../images/grid__card5.png");
+}
+.filters .grid .card6 {
+  background-image: url("../images/grid__card6.png");
+}
+.filters .grid__card > a {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.filters .grid__card > a:hover {
+  color: #e3bf2c;
+}
+
+.background__black {
+  padding: 100px 0 100px;
+  background-color: #000000;
+}
+.background__black .middle__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 730px;
+  margin: 0 auto;
+}
+.background__black .middle__content .top__block > a {
+  color: #FFFFFF;
+}
+.background__black .middle__content .top__block > h2 {
+  color: #FFFFFF;
+}
+.background__black .middle__content > p {
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.background__black .middle__content > a.main__button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  background-color: #333333;
+  border: 1px solid #FFFFFF;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+.background__black .middle__content > a.main__button:hover {
+  background-color: #c4c3c3;
+}
+
+.blog {
+  padding: 120px 0;
+}
+.blog .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-rows: auto;
+  gap: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */
