@@ -127,7 +127,6 @@ a {
 .background__img .center__block .main__button:hover {
   background-color: #e3bf2c;
   color: #333333;
-  opacity: 0.7;
 }
 .background__img .separator {
   width: 100%;
@@ -301,11 +300,62 @@ a {
 .blog {
   padding: 120px 0;
 }
-.blog .grid {
+.blog .wrapper__blog {
+  display: flex;
+  flex-direction: column;
+}
+.blog .wrapper__blog .grid__blog {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   grid-template-rows: auto;
   gap: 30px;
+  margin-bottom: 60px;
+}
+.blog .wrapper__blog .grid__blog .article {
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+  min-height: 370px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.blog .wrapper__blog .grid__blog .card-1 {
+  background-image: url("../images/card-1.png");
+}
+.blog .wrapper__blog .grid__blog .card-2 {
+  background-image: url("../images/card-2.png");
+}
+.blog .wrapper__blog .grid__blog .card-3 {
+  background-image: url("../images/card-3.png");
+}
+.blog .wrapper__blog .grid__blog .text__link, .blog .wrapper__blog .grid__blog .text__link_ {
+  font-size: 21px;
+  line-height: 140%;
+  padding: 0 60px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.blog .wrapper__blog .grid__blog .text__link_ {
+  padding: 0 90px;
+}
+.blog .wrapper__blog .main__button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  background-color: #333333;
+  border: 1px solid #FFFFFF;
+  align-self: center;
+}
+.blog .wrapper__blog .main__button:hover {
+  background-color: #e3bf2c;
+  color: #333333;
 }
 
 /*# sourceMappingURL=styles.css.map */

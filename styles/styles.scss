@@ -20,8 +20,6 @@
   }
 }
 
-
-
 .background__img {
   background-image: url("../images/bg.png");
   background-size: cover;
@@ -95,7 +93,6 @@
       &:hover {
         background-color: #e3bf2c;
         color: #333333;
-        opacity: 0.7;
       }
     }
   }
@@ -275,14 +272,64 @@
 .blog {
   padding: 120px 0;
 
-  .grid {
-    @include grid();
+  .wrapper__blog {
+    display: flex;
+    flex-direction: column;
 
+    .grid__blog {
+      @include grid();
+      margin-bottom: 60px;
+
+      .article {
+        width: 100%;
+        max-width: 350px;
+        height: 100%;
+        min-height: 370px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+      }
+
+      .card-1 {
+        background-image: url("../images/card-1.png");
+      }
+
+      .card-2 {
+        background-image: url("../images/card-2.png");
+      }
+
+      .card-3 {
+        background-image: url("../images/card-3.png");
+      }
+
+      .text__link, .text__link_ {
+        font-size: 21px;
+        line-height: 140%;
+        padding: 0 60px;
+        text-align: center;
+        margin-bottom: 35px;
+      }
+
+      .text__link_ {
+        padding: 0 90px;
+      }
+    }
+
+    .main__button {
+      @include main__button();
+      align-self: center;
+
+      &:hover {
+        background-color: #e3bf2c;
+        color: #333333;
+      }
+    }
 
   }
-
-
 }
+
 
 
 
