@@ -230,7 +230,7 @@
 
 .background__black {
   padding: 100px 0 100px;
-  background-color: #000000;
+  background-image: url("../images/section_bg.png");
 
   .middle__content {
     @include flex__column();
@@ -404,6 +404,59 @@
 }
 
 .wrapper__bg {
+  @include flex__column();
+
+  .top__block {
+
+    & > a {
+      color: #FFFFFF;
+    }
+
+    & > h2 {
+      color: #FFFFFF;
+    }
+  }
+
+  .under__title__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .left__block {
+
+      ul {
+        @include flex__column();
+        gap: 15px;
+      }
+
+      ul > li {
+        list-style: none;
+        position: relative;
+
+        &::before {
+          content: url("../images/triangle__icon.svg");
+          position: absolute;
+          transform: translate(-180%, 0%);
+        }
+      }
+    }
+
+    .border {
+      border: 1px solid #FFFFFF;
+      padding: 15px;
+      width: 100%;
+      max-width: 448px;
+
+      .right__block {
+        padding: 20px;
+        background-color: #FFFFFF;
+
+
+      }
+
+
+    }
+  }
 
 }
 
