@@ -1,29 +1,32 @@
 @font-face {
   src: url("../fonts/Gilroy-Medium.woff");
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   src: url("../fonts/Gilroy-Regular.woff");
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   src: url("../fonts/Gilroy-Bold.woff");
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Gilroy", sans-serif;
+  font-family: 'Gilroy', sans-serif;
   color: #ffffff;
 }
 
@@ -49,12 +52,14 @@ a {
   align-items: center;
   margin-bottom: 60px;
 }
+
 .top__block > a {
   font-size: 21px;
   line-height: 140%;
   color: #333333;
   margin-bottom: 15px;
 }
+
 .top__block > h2 {
   font-family: serif;
   font-size: 30px;
@@ -69,42 +74,52 @@ a {
   background-position: center;
   padding: 25px 0 30px;
 }
+
 .background__img header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 525px;
 }
+
 .background__img header nav {
   display: flex;
   gap: 40px;
 }
+
 .background__img header .header__account {
   display: flex;
   gap: 40px;
   align-items: center;
 }
+
 .background__img header .header__logos svg {
   fill: #ffffff;
 }
+
 .background__img header .header__logos:hover svg {
   fill: #e3bf2c;
 }
+
 .background__img header .header__link:hover {
   color: #e3bf2c;
 }
+
 .background__img header .main__logo svg {
   fill: #FFFFFF;
 }
+
 .background__img header .main__logo:hover svg {
   fill: #e3bf2c;
 }
+
 .background__img .center__block {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 80px;
 }
+
 .background__img .center__block .main__title {
   font-family: serif;
   font-style: normal;
@@ -113,6 +128,7 @@ a {
   line-height: 49px;
   margin-bottom: 50px;
 }
+
 .background__img .center__block .main__button {
   font-style: normal;
   font-weight: 500;
@@ -124,26 +140,32 @@ a {
   background-color: #333333;
   border: 1px solid #FFFFFF;
 }
+
 .background__img .center__block .main__button:hover {
   background-color: #e3bf2c;
   color: #333333;
 }
+
 .background__img .separator {
   width: 100%;
   border: 1px solid #FFFFFF;
   margin-bottom: 30px;
 }
+
 .background__img .wrapper__items {
   display: flex;
 }
+
 .background__img .wrapper__items .item {
   padding: 0 15px;
   border-right: 1px solid #FFFFFF;
 }
+
 .background__img .wrapper__items .item:last-child {
   border-right: none;
   padding-right: 0;
 }
+
 .background__img .wrapper__items .item .img__item {
   width: 100%;
   max-width: 160px;
@@ -152,15 +174,18 @@ a {
 .filters {
   padding: 100px 0 120px;
 }
+
 .filters__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .filters__list > li {
   list-style: none;
   padding: 5px;
 }
+
 .filters__list > li > .filters__item {
   font-style: normal;
   font-weight: 500;
@@ -179,8 +204,9 @@ a {
   text-align: center;
   transform: translate(0, -53px);
 }
+
 .filters__list .filters__li::before {
-  content: "";
+  content: '';
   display: block;
   width: 165px;
   height: 53px;
@@ -190,11 +216,13 @@ a {
   left: 6px;
   top: 6px;
 }
+
 .filters__list a:hover {
   background-color: #e3bf2c;
   color: #333333;
   border-color: #333333;
 }
+
 .filters__list .filters__active {
   font-style: normal;
   font-weight: 500;
@@ -209,12 +237,14 @@ a {
   height: 61px;
   padding: 18px 35px;
 }
+
 .filters .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   grid-template-rows: auto;
   gap: 30px;
 }
+
 .filters .grid__card {
   display: flex;
   align-items: flex-end;
@@ -226,24 +256,31 @@ a {
   background-size: cover;
   background-position: center;
 }
+
 .filters .grid .card1 {
   background-image: url("../images/grid__card1.png");
 }
+
 .filters .grid .card2 {
   background-image: url("../images/grid__card2.png");
 }
+
 .filters .grid .card3 {
   background-image: url("../images/grid__card3.png");
 }
+
 .filters .grid .card4 {
   background-image: url("../images/grid__card4.png");
 }
+
 .filters .grid .card5 {
   background-image: url("../images/grid__card5.png");
 }
+
 .filters .grid .card6 {
   background-image: url("../images/grid__card6.png");
 }
+
 .filters .grid__card > a {
   font-weight: 500;
   font-size: 24px;
@@ -252,6 +289,7 @@ a {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+
 .filters .grid__card > a:hover {
   color: #e3bf2c;
 }
@@ -260,6 +298,7 @@ a {
   padding: 100px 0 100px;
   background-image: url("../images/section_bg.png");
 }
+
 .background__black .middle__content {
   display: flex;
   flex-direction: column;
@@ -268,18 +307,22 @@ a {
   max-width: 730px;
   margin: 0 auto;
 }
+
 .background__black .middle__content .top__block > a {
   color: #FFFFFF;
 }
+
 .background__black .middle__content .top__block > h2 {
   color: #FFFFFF;
 }
+
 .background__black .middle__content > p {
   font-size: 18px;
   line-height: 140%;
   text-align: center;
   margin-bottom: 60px;
 }
+
 .background__black .middle__content > a.main__button {
   font-style: normal;
   font-weight: 500;
@@ -293,6 +336,7 @@ a {
   color: #333333;
   background-color: #FFFFFF;
 }
+
 .background__black .middle__content > a.main__button:hover {
   background-color: #e3bf2c;
 }
@@ -300,10 +344,12 @@ a {
 .blog {
   padding: 120px 0;
 }
+
 .blog .wrapper__blog {
   display: flex;
   flex-direction: column;
 }
+
 .blog .wrapper__blog .grid__blog {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
@@ -311,6 +357,7 @@ a {
   gap: 30px;
   margin-bottom: 60px;
 }
+
 .blog .wrapper__blog .grid__blog .article {
   width: 100%;
   max-width: 350px;
@@ -322,15 +369,19 @@ a {
   justify-content: center;
   align-items: end;
 }
+
 .blog .wrapper__blog .grid__blog .card-1 {
   background-image: url("../images/card-1.png");
 }
+
 .blog .wrapper__blog .grid__blog .card-2 {
   background-image: url("../images/card-2.png");
 }
+
 .blog .wrapper__blog .grid__blog .card-3 {
   background-image: url("../images/card-3.png");
 }
+
 .blog .wrapper__blog .grid__blog .text__link, .blog .wrapper__blog .grid__blog .text__link_ {
   font-size: 21px;
   line-height: 140%;
@@ -338,9 +389,11 @@ a {
   text-align: center;
   margin-bottom: 35px;
 }
+
 .blog .wrapper__blog .grid__blog .text__link_ {
   padding: 0 90px;
 }
+
 .blog .wrapper__blog .main__button {
   font-style: normal;
   font-weight: 500;
@@ -353,6 +406,7 @@ a {
   border: 1px solid #FFFFFF;
   align-self: center;
 }
+
 .blog .wrapper__blog .main__button:hover {
   background-color: #e3bf2c;
   color: #333333;
@@ -361,26 +415,31 @@ a {
 .gallery {
   padding: 0 0 150px;
 }
+
 .gallery .top__block {
   margin-bottom: 60px;
 }
+
 .gallery__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "gallery__card1 gallery__card1 gallery__card2 gallery__card3" "gallery__card4 gallery__card5 gallery__card6 gallery__card6";
+  grid-template-areas: "gallery__card1 gallery__card1 gallery__card2 gallery__card3" "gallery__card4 gallery__card5 gallery__card6 gallery__card6";
 }
+
 .gallery .gallery__card {
   height: 100%;
   min-height: 300px;
   background-position: center;
   background-size: cover;
 }
+
 .gallery .gallery__card1 {
   grid-area: gallery__card1;
   background-image: url("../images/gallery__video1.png");
   position: relative;
 }
+
 .gallery .gallery__card1::before {
   content: url("../images/gallery_play-circle.svg");
   position: absolute;
@@ -388,27 +447,33 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .gallery .gallery__card2 {
   grid-area: gallery__card2;
   background-image: url("../images/gallery__image1.png");
 }
+
 .gallery .gallery__card3 {
   grid-area: gallery__card3;
   background-image: url("../images/gallery__image2.png");
 }
+
 .gallery .gallery__card4 {
   grid-area: gallery__card4;
   background-image: url("../images/gallery__image3.png");
 }
+
 .gallery .gallery__card5 {
   grid-area: gallery__card5;
   background-image: url("../images/gallery__image4.png");
 }
+
 .gallery .gallery__card6 {
   grid-area: gallery__card6;
   background-image: url("../images/gallery__video2.png");
   position: relative;
 }
+
 .gallery .gallery__card6::before {
   content: url("../images/gallery_play-circle.svg");
   position: absolute;
@@ -421,41 +486,50 @@ a {
   display: flex;
   flex-direction: column;
 }
+
 .wrapper__bg .top__block > a {
   color: #FFFFFF;
 }
+
 .wrapper__bg .top__block > h2 {
   color: #FFFFFF;
 }
+
 .wrapper__bg .under__title__block {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+
 .wrapper__bg .under__title__block .left__block ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .wrapper__bg .under__title__block .left__block ul > li {
   list-style: none;
   position: relative;
 }
+
 .wrapper__bg .under__title__block .left__block ul > li::before {
   content: url("../images/triangle__icon.svg");
   position: absolute;
   transform: translate(-180%, 0%);
 }
+
 .wrapper__bg .under__title__block .border {
   border: 1px solid #FFFFFF;
   padding: 15px;
   width: 100%;
   max-width: 450px;
 }
+
 .wrapper__bg .under__title__block .border .right__block {
   padding: 20px;
   background-color: #FFFFFF;
 }
+
 .wrapper__bg .under__title__block .border .right__block .input {
   padding: 15px 20px;
   border: 1px solid #D6D6D6;
@@ -467,6 +541,7 @@ a {
   text-transform: uppercase;
   margin-right: 15px;
 }
+
 .wrapper__bg .under__title__block .border .right__block .main__button {
   font-style: normal;
   font-weight: 500;
@@ -485,22 +560,26 @@ footer {
   padding-top: 80px;
   padding-bottom: 60px;
 }
+
 footer .footer__wrapper {
   display: flex;
   justify-content: space-between;
 }
+
 footer .footer__wrapper .cell {
   width: 100%;
   max-width: 255px;
   display: flex;
   flex-direction: column;
 }
+
 footer .footer__wrapper .cell > a, footer .footer__wrapper .cell > p {
   color: #333333;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
 }
+
 footer .footer__wrapper .cell > h6 {
   color: #333333;
   font-weight: 500;
@@ -510,8 +589,7 @@ footer .footer__wrapper .cell > h6 {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
 footer .footer__wrapper .footer__separator {
   border-bottom: 1px solid #333333;
 }
-
-/*# sourceMappingURL=styles.css.map */
